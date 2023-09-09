@@ -1,4 +1,4 @@
-baseurl = "forceofsystem.github.io"
+baseurl = "https://forceofsystem.github.io"
 disablePathToLower = false
 languageCode = "zh-cn"
 title = "为生活"
