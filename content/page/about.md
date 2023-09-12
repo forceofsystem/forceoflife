@@ -4,6 +4,7 @@ draft: false
 title: "个人简介"
 url: "/about/"
 comments: false
+toc: true
 ---
 
 我是生活之力，一个热爱生活、文学和计算机底层的内蒙古人。

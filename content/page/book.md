@@ -2,6 +2,7 @@
 date: 2023-09-09T17:09:20+08:00
 draft: false
 title: "书籍推荐"
+toc: true
 url: "/book/"
 comments: false
 ---
