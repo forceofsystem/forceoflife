@@ -1,15 +1,14 @@
 ---
-title: "Dairy1015"
+title: "日记一则"
 date: 2023-10-15T22:10:05+08:00
-draft: true
-toc: false
+draft: false
+toc: true
 comments: false
 categories:
-- category1
-- category2
+- 日记
+- 杂谈
 tags:
-- tag1
-- tag2
+- 辩论
 ---
 
 
