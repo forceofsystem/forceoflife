@@ -3,7 +3,7 @@ title: "智慧川大人 ｜ 凤凰浴火，涅槃重生——软件学院辩论�
 date: 2023-11-08T11:31:10+08:00
 draft: false
 toc: true
-comments: false
+comments: true
 categories:
 - 生活
 tags:
