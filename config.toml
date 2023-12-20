@@ -7,7 +7,7 @@ theme = "Hugo-Octopress"
 # Disqus shortcode
 # Disable comments for any individual post by adding "comments: false" in its frontmatter
 # Note it's not under [params] anymore
-# disqusShortname = "Your disqus shortname"
+disqusShortname = "codearts"
 
 # Number of blog posts in each pagination page
 paginate = 5
