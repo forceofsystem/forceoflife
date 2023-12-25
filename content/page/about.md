@@ -3,7 +3,7 @@ date: 2023-09-09T17:09:20+08:00
 draft: false
 title: "个人简介"
 url: "/about/"
-comments: false
+comments: true
 toc: true
 ---
 
@@ -27,11 +27,11 @@ toc: true
 
 我最喜欢的 PC 操作系统是 Mac OS，其次是 Linux，之后才是 Windows。喜欢 Mac OS 的原因是我喜欢它的动画、UI 设计等与计算机无关的东西（~~哈哈，有点冷幽默~~），它让我很有生活的感觉；喜欢 Linux 是因为它高度可定制，而且写代码配置环境很方便，而且对系统有很高的掌控程度，但是 Linux 不太稳定，需要经常折腾（也许是我爱折腾罢），Mac OS 与之相比就要省心很多；对于 Windows，说实话它并没有多少让我喜欢的点，只是很多软件都只能跑在 Windows 上，而且相对 Linux 来说它也不需要太多配置，并且从小一直用到现在。我并不是很讨厌 Windows，毕竟我偶尔也会玩玩游戏，做反汇编也需要 ida，只是 Windows 并没有足够的特色让我喜欢它。Windows 是 mac 和 Linux 的中间值，既不像 mac 一样非常稳定，对用户的限制非常多且细；也不像 Linux 一样任由用户去操作，有时这很方便，但也有很多时候令人抓狂。
 
-最喜欢的 Linux 发行版是 Gentoo Linux，现在在用的是 Arch Linux。之所以不用 Gentoo，是因为它安装软件都要编译，笔记本吃不消，而且我对 Gentoo 的了解也不够深，没有办法很好地使用。而 Arch 虽然也是滚动发行版，pacman + AUR 就很好地解决了这个问题，而且我觉得某种程度上 Arch 的 K.I.S.S 哲学还要比 Gentoo 更纯粹。
+最喜欢的 Linux 发行版是 Gentoo Linux，现在在用的是 Debian Linux。之所以不用 Gentoo，是因为它安装软件都要编译，笔记本吃不消，而且我对 Gentoo 的了解也不够深，没有办法很好地使用。用 Debian 的主要原因是它足够省事，同时也能提供很好的体验，软件版本也刚好。
 
-使用的桌面环境是 Wayland 环境下的 Wayfire，一个键盘操作性很强的堆叠式窗口管理器，不用平铺式的原因是不想太折腾，正好之前看了[依云的博客](https://blog.lilydjwg.me)，发现 Wayland 可以很好地满足我既不想折腾，又想用键盘操控的需求，故用之。
+使用的桌面环境是 Wayland 环境下的 gnome，最大的原因是 gnome-terminal 对 fcitx5 支持的不错，而且颜值也还可以。
 
-常用的浏览器是 Safari，没啥特别的原因，mac 默认；在 Mac 和 Windows 上还会使用 Microsoft Edge，因为我要用 New Bing 和 Chatgpt，不在 Safari 上用是因为 Safari 在中文输入法下按空格会直接发送而不是输入英文；在 Linux 上用 Firefox，支持开源。
+常用的浏览器是 Safari，没啥特别的原因，mac 默认；在 Linux 上用 Firefox，支持开源。
 
 ## 个人履历
 
