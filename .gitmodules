@@ -1,9 +1,6 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:forceofsystem/forceofsystem.github.io.git
-[submodule "themes/themes/Hugo-Octopress"]
-	path = themes/themes/Hugo-Octopress
-	url = https://github.com/parsiya/Hugo-Octopress
-[submodule "themes/Hugo-Octopress"]
-	path = themes/Hugo-Octopress
-	url = https://github.com/parsiya/Hugo-Octopress
+[submodule "themes/hugo-theme-texify"]
+	path = themes/hugo-theme-texify
+	url = https://github.com/queensferryme/hugo-theme-texify.git
