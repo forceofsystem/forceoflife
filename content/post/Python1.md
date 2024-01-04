@@ -1,6 +1,6 @@
 ---
 title: "从零开始学 CPython - 0"
-lastmod: 2023-12-19T14:28:43+08:00
+date: 2023-12-19T14:28:43+08:00
 draft: false
 comments: true
 toc: true

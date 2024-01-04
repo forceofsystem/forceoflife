@@ -1,6 +1,6 @@
 ---
 title: "往事——评书"
-lastmod: 2023-12-25T23:52:00+08:00
+date: 2023-12-25T23:52:00+08:00
 draft: false
 comments: true
 toc: false
