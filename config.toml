@@ -97,5 +97,5 @@ script = """
 """
 
 [services]
-  [services.googleAnalytics]
-    ID = 'G-TZC1QJP9DV'
+[services.googleAnalytics]
+ID = 'G-TZC1QJP9DV'
