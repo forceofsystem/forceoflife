@@ -80,7 +80,7 @@ script = """
 """
 
 [params.math]
-enable = false # whether to enable math typesetting
+enable = true # whether to enable math typesetting
 use = "katex"  # katex or mathjax
 
 [params.outdated]
