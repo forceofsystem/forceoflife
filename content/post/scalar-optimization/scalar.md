@@ -1,5 +1,5 @@
 ---
-title: 'Scalar'
+title: 'Scalar Optimization'
 date: 2024-03-14T02:43:34+08:00
 draft: false
 comments: true
