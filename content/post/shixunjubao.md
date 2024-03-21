@@ -4,10 +4,9 @@ date: 2024-03-14T09:42:51+08:00
 draft: false
 comments: false
 categories:
-- 杂谈
 tags:
-- 川大
-- 教务处
+- 杂谈
+- 大学
 - 政治
 ---
 

@@ -3,12 +3,10 @@ title: "从hexo到hugo"
 date: 2023-09-09T16:30:25+08:00
 draft: false
 toc: true
-categories:
-  - 其他技术
-  - 杂谈
 tags:
   - hugo
   - 博客
+  - 杂谈
 ---
 
 <!--more-->

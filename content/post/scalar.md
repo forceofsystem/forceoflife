@@ -4,12 +4,11 @@ date: 2024-03-14T02:43:34+08:00
 draft: false
 comments: true
 toc: true
-catagories:
-  - 编译原理
-  - 笔记
 tags:
-  - 数据流分析
+  - 编译原理
   - 优化
+  - Compiler
+  - Optimization
 ---
 
 This blog is a note of reading chapter 10 of EAC (Scalar Optimization), which contains not only the content in the book but my understanding. Ultimately, I have finished the reading of the whole book in two months, and will continue to read the dragon book and _Advanced Compiler Design and Implementation_. I will also write some notes about those books.

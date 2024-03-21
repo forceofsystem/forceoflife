@@ -4,12 +4,11 @@ date: 2024-03-05T23:16:20+08:00
 draft: false
 comments: true
 toc: true
-catagories:
-  - 编译原理
-  - 笔记
 tags:
-  - 数据流分析
+  - 编译原理
   - 优化
+  - Compiler
+  - Optimization
 ---
 
 这篇文章是我在看 _Engineering A Compiler_ (EAC，橡书) 中第 9 章数据流分析的笔记，里面标有 Confused 的地方是我困惑的内容，包括过程间常量传播 (Jump Function)、加速DOM计算，之后如果搞懂了会写文章来补充。

@@ -4,11 +4,9 @@ date: 2023-12-25T23:52:00+08:00
 draft: false
 comments: true
 toc: false
-categories:
-  - 杂谈
 tags:
-  - 评书
   - 生活
+  - 杂谈
 ---
 
 <!--more-->

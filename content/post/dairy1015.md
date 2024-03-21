@@ -4,11 +4,9 @@ date: 2023-10-15T22:10:05+08:00
 draft: false
 toc: true
 comments: false
-categories:
-- 日记
-- 杂谈
 tags:
 - 辩论
+- 杂谈
 ---
 
 

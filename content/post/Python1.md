@@ -4,12 +4,10 @@ date: 2023-12-19T14:28:43+08:00
 draft: false
 comments: true
 toc: true
-categories:
-  - 编译原理
-  - 源码阅读
 tags:
   - Python
   - 编译原理
+  - Compiler
 ---
 
 <!--more-->

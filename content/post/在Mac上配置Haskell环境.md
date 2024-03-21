@@ -4,10 +4,7 @@ date: 2023-06-28T18:10:03+08:00
 draft: true
 toc: true
 comments: true
-categories:
-  - 环境搭建
 tags:
-  - 技术
   - Haskell
 ---
 

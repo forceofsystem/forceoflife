@@ -4,10 +4,8 @@ date: 2023-11-08T11:31:10+08:00
 draft: false
 toc: true
 comments: true
-categories:
-- 生活
 tags:
-- 战报
+- 生活
 - 辩论
 ---
 
