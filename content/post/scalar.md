@@ -333,7 +333,7 @@ Fortunately, the SSA name space encodes precisely this distinction. In SSA, a na
 
 **We can use dominance information to locate the most recent predecessor which the algorithm can use.**
 
-![DVNT](/2024/scalar-optimzation/DVNT.png)
+![DVNT](/2024/scalar-optimization/DVNT.png)
 
 #### Process the $\phi$-Functions in B
 
