@@ -4,7 +4,7 @@
 ###################################################
 
 baseURL = "https://forceoflife.cn" # website root path
-disqusShortname = "codearts"                      # disqus shortcode
+#disqusShortname = "codearts"                      # disqus shortcode
 enableGitInfo = false                     # retrieve last modified date from git commits
 enableRobotsTXT = true                    # /robots.txt
 #googleAnalytics = "G-TZC1QJP9DV"                      # google analytics id
@@ -74,9 +74,25 @@ toc = true               # whether to enable table of contents in posts
 
 # https://giscus.app
 [params.giscus]
-enable = false # whether to enable giscus
+enable = true # whether to enable giscus
 # paste giscus' <script></script> configuration between the triple quotes
 script = """
+<script src="https://giscus.app/client.js"
+        data-repo="forceofsystem/forceofsystem.github.io"
+        data-repo-id="R_kgDOJn4OQw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJn4OQ84CeqcH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 """
 
 [params.math]
