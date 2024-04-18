@@ -3,4 +3,4 @@
 	url = git@github.com:forceofsystem/forceofsystem.github.io.git
 [submodule "themes/hugo-theme-texify"]
 	path = themes/hugo-theme-texify
-	url = https://github.com/queensferryme/hugo-theme-texify.git
+	url = git@github.com:forceofsystem/hugo-theme-texify.git

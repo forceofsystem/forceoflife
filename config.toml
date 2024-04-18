@@ -7,7 +7,6 @@ baseURL = "https://forceoflife.cn" # website root path
 #disqusShortname = "codearts"                      # disqus shortcode
 enableGitInfo = false                     # retrieve last modified date from git commits
 enableRobotsTXT = true                    # /robots.txt
-#googleAnalytics = "G-TZC1QJP9DV"                      # google analytics id
 hasCJKLanguage = true                     # Chinese/Japanese/Korean
 languageCode = "zh"                       # content language
 paginate = 5                              # number of posts each page
@@ -113,5 +112,5 @@ script = """
 """
 
 [services]
-[services.googleAnalytics]
-ID = 'G-TZC1QJP9DV'
+  [services.googleAnalytics]
+    ID = 'G-TZC1QJP9DV'
