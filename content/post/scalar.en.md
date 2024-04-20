@@ -476,7 +476,7 @@ In SSA form, the induction variable’s header is the $\phi$-function at the sta
 ### The Algorithm
 
 > Tarjan’s Strongly Connected Region Finder:
-This is an method to compute the strongly connected component propsed by [Robert Tarjan](https://en.wikipedia.org/wiki/Robert_Tarjan). You can find more information of this [algorithm]([https://en.wikipedia.org/wiki/Tarjan's_strongly_connected_components_algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)). If you feel confused about this method at first like me, you may get further understanding from this video: [Tarjan’s Strongly Connected Components]([https://www.youtube.com/watch?v=wUgWX0nc4NY](https://www.youtube.com/watch?v=wUgWX0nc4NY))
+This is an method to compute the strongly connected component propsed by [Robert Tarjan](https://en.wikipedia.org/wiki/Robert_Tarjan). You can find more information of this [algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm). If you feel confused about this method at first like me, you may get further understanding from this video: [Tarjan’s Strongly Connected Components](https://www.youtube.com/watch?v=wUgWX0nc4NY)
 > 
 
 OSR uses Tarjan’s rtrongly connected region finder to drive the entire process.

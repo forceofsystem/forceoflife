@@ -2,12 +2,12 @@
 date: 2023-09-09T17:09:20+08:00
 draft: false
 title: "个人简介"
-url: "/about/"
+url: "/en/about/"
 comments: true
 toc: true
 ---
 
-我是生活之力，一个热爱生活、文学和计算机底层的内蒙古人。
+Hello!
 
 ## 志趣简介
 
