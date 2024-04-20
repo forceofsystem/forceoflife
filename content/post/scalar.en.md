@@ -5,8 +5,6 @@ draft: false
 comments: true
 toc: true
 tags:
-  - 编译原理
-  - 优化
   - Compiler
   - Optimization
 ---
@@ -75,7 +73,9 @@ The algorithm for eliminating useless code performs two pass over the code, like
 
 **The algorithm assumes that the code is in SSA form.**
 
-![two-stage](/2024/scalar-optimization/two-stage.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/two-stage.png" alt="two-stage" style="zoom:50%;" />
+</div>
 
 For control-flow operations, the treatment of the algorithm is more complex than normal operations.
 
@@ -106,26 +106,36 @@ The *clean* algorithm uses four transformations, which are applyed in the follow
 
 1. Fold a Redundant Branch
 
-![fold-redundant](/2024/scalar-optimization/fold-redundant-branch.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/fold-redundant-branch.png" alt="fold-redundant" />
+</div>
 
 2. Remove an Empty Block
 
-![remove-empty-block](/2024/scalar-optimization/remove-empty-block.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/remove-empty-block.png" alt="remove-empty-block" />
+</div>
 
 3. Combine Blocks
 
-![combine-blocks](/2024/scalar-optimization/combine-blocks.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/combine-blocks.png" alt="combine-blocks" />
+</div>
 
 4. Hoist a Branch: If *clean* finds a block $B_i$ that ends with a jump to an empty block $B_j$ and $B_j$ ends with a branch. Clean can replace the block-ending jump in $B_i$ with a copy of the branch from $B_j$.
 
 - $B_i$ cann’t be empty, and
 - $B_i$ cann’t be $B_j$’s sole prodecessor.
 
-![hoist-branch](/2024/scalar-optimization/hoist-branch.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/hoist-branch.png" alt="hoist-branch" />
+</div>
 
 A systematic C*lean* implementation traverses the graph in postorder, so that $B_i$’s successors are simplified before $B_i$ unless the successor lies along a back edge with respect to the postorder number- ing. This method reduces the number of times that the implementation must move some edges.
 
-![DCE](/2024/scalar-optimization/dce.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/dce.png" alt="DCE" style="zoom: 50%" />
+</div>
 
 If the CFG contains back edges, then a pass of *Clean* may create unprocessed successors along the back edges. For this reason, *Clean* repeats the transformation sequence iteratively until the CFG stops changing.
 
@@ -325,7 +335,9 @@ With this rules, LVN can prove that 2 + a has the same value as a + 2 or as 2 + 
 
 ### Dominator-based Value Numbering (DVNT)
 
-![DVNT1](/2024/scalar-optimization/DVNT1.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/DVNT1.png" alt="DVNT1" />
+</div>
 
 Recall that at the SVN algorithm, we assumes that the block $B_4$ begins with no prior context. However, though $B_4$ can’t rely on values computed in either $B_2$ or $B_3$, it can rely on values computed in $B_0$ and $B_1$, since they occur on every path that reaches $B_4$.
 
@@ -333,7 +345,9 @@ Fortunately, the SSA name space encodes precisely this distinction. In SSA, a na
 
 **We can use dominance information to locate the most recent predecessor which the algorithm can use.**
 
-![DVNT](/2024/scalar-optimization/DVNT.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/DVNT.png" alt="DVNT" style="zoom: 50%" />
+</div>
 
 #### Process the $\phi$-Functions in B
 
@@ -377,13 +391,19 @@ However, cloning has costs, too. It will lead to larger code, which may run more
 
 The idea is analogous to the block cloning that occurs in superblock cloning. The compiler creates multiple copies of the callee and assigns some of the calls to each instance of the clone
 
-![original](/2024/scalar-optimization/original.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/original.png" alt="original" />
+</div>
 
-![after-cloning](/2024/scalar-optimization/after-cloning.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/after-cloning.png" alt="after-cloning" />
+</div>
 
 ### Loop Unswitching
 
-![unswitch](/2024/scalar-optimization/unswitch.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/unswitch.png" alt="unswitch" style="zoom: 50%" />
+</div>
 
 Unswitching is an enabling transformation, it can lead to better scheduling, better register allocation, and fast execution.
 
@@ -400,7 +420,9 @@ In concept, SCCP operates in a straightforward way. It initializes the data stru
 > To simplify the explanation of SCCP, we assume that each block in the CFG represents just one statement, plus some optional $\phi$-functions.
 > 
 
-![SCCP1](/2024/scalar-optimization/SCCP1.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/SCCP1.png" alt="SCCP1" style="zoom: 50%" />
+</div>
 
 After the initialization phase, the algorithm repeatedly picks an edge from one of the two worklists and process that edge. 
 
@@ -413,9 +435,10 @@ Next, SCCP determines if block $n$ has been previously entered along another edg
 
 For an SSA edge, the algorithm first checks if the destination block is reachable. If the block is reachable, SCCP calls one of *EvaluatePhi,* EvaluateAssign, or *EvaluateConditional*, based on the kind of operation that uses the SSA name.
 
-![SCCP2](/2024/scalar-optimization/SCCP2.png)
-
-![SCCP3](/2024/scalar-optimization/SCCP3.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/SCCP2.png" alt="SCCP2" style="width: 49%" />
+  <img src="/2024/scalar-optimization/SCCP3.png" alt="SCCP3" style="width: 49%" />
+</div>
 
 After the propagation step, a final pass is required to replace operations that have operands with *Value* tags other than $\bot$. The algorithm cannot rewrite the code until the propagation completes.
 
@@ -481,11 +504,15 @@ This is an method to compute the strongly connected component propsed by [Robert
 
 OSR uses Tarjan’s rtrongly connected region finder to drive the entire process.
 
-![OSR1](/2024/scalar-optimization/OSR1.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/OSR1.png" alt="OSR1" style="zoom: 50%" />
+</div>
 
 ### Rewriting the Code
 
-![OSR2](/2024/scalar-optimization/OSR2.png)
+<div align="center">
+  <img src="/2024/scalar-optimization/OSR2.png" alt="OSR2" style="zoom: 50%" />
+</div>
 
 *Replace* calls *Reduce* to rewrite the operation represented by n. Next, it replaces $n$ with a copy operation from the result produced by *Replace*. It sets $n$’s header field, and returns.
 

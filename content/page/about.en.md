@@ -1,42 +1,30 @@
 ---
 date: 2023-09-09T17:09:20+08:00
 draft: false
-title: "个人简介"
+title: "About Me"
 url: "/en/about/"
 comments: true
 toc: true
 ---
 
-Hello!
+**Hello!**
 
-## 志趣简介
+## Introduction
 
-我热爱生活，但对生活的看法经常改变。时而认为安稳是美好，时而认为浪漫是美好；时而想在家乡小城市待一辈子，时而想去外面的世界闯荡一番。
+I'm Patrick Zhang, a software engineering student at Sichuan University in China. I'm a fan of systems (you can check this category through [csrankings](https://csrankings.org/)), especially in the field of programming language (compiler and program analysis), computer architecture, and operating systems.
 
-我最喜欢的节日是春节，最喜欢的音乐是《春节序曲》，关于这部分内容我会写几篇文章来分享。
+My favorite software is [vim](https://www.vim.org/), which is a powerful text editor. And I'm a fan of [Bram Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar), the author of vim, who has already pass away in 2023. I want to write a software which make a difference to the whole world like vim in the future.
 
-截至目前，我的目标是：赚够足够的资本，回到家乡小城生活。（如果你问我关于婚姻和孩子的问题，我只能说，还没想好）
+## Environment
 
-（未完待续……）
+I have two laptops, a Macbook Air M1 and a second-hand ThinkPad T480 to provide x86-64.
 
-## 环境简介
+I like Linux at most, because it is an open-source operating system. I can do whatever I want to do on it. I find it's convenient to write code on linux, because it's easy to set the environment by the package manager. Moreover, my favorite distribution is gentoo linux, which is a source-based distribution. I like the moment when I compile the software by myself, and it can be relatively stable compared to arch linux which is also the rolling release. However, I use Debian on my laptop now, because I wanna save time to do other things, and more importantly, save the electricity bill lol. Debian is a stable and powerful distribution, and it's easy to use.
 
-作为一个喜欢底层的计算机科班生，还是有必要介绍一下我的环境的。
+I use Macbook Air M1 as my main laptop, because it's stable, and maintain a great balance between development and life. It's posix compliant, but its default animation is more smooth and UI design is more beautiful than Linux. Though I use Windows when I was a child, I don't like Windows, because it usually dumps, and it's not stable. But I still use it to play games and use some softwares which only support Windows.
 
-我目前有两台电脑，一台 Macbook Air M1，一台二手的 ThinkPad T480（用来提供 x86-64 环境）。
+## Education
 
-我最喜欢的 PC 操作系统是 Mac OS，其次是 Linux，之后才是 Windows。喜欢 Mac OS 的原因是我喜欢它的动画、UI 设计等与计算机无关的东西（~~哈哈，有点冷幽默~~），它让我很有生活的感觉；喜欢 Linux 是因为它高度可定制，而且写代码配置环境很方便，而且对系统有很高的掌控程度，但是 Linux 不太稳定，需要经常折腾（也许是我爱折腾罢），Mac OS 与之相比就要省心很多；对于 Windows，说实话它并没有多少让我喜欢的点，只是很多软件都只能跑在 Windows 上，而且相对 Linux 来说它也不需要太多配置，并且从小一直用到现在。我并不是很讨厌 Windows，毕竟我偶尔也会玩玩游戏，做反汇编也需要 ida，只是 Windows 并没有足够的特色让我喜欢它。Windows 是 mac 和 Linux 的中间值，既不像 mac 一样非常稳定，对用户的限制非常多且细；也不像 Linux 一样任由用户去操作，有时这很方便，但也有很多时候令人抓狂。
+- 2021.09 - now, Sichuan University, Software Engineering, Bachelor
 
-最喜欢的 Linux 发行版是 Gentoo Linux，现在在用的是 Debian Linux。之所以不用 Gentoo，是因为它安装软件都要编译，笔记本吃不消，而且我对 Gentoo 的了解也不够深，没有办法很好地使用。用 Debian 的主要原因是它足够省事，同时也能提供很好的体验，软件版本也刚好。
-
-使用的桌面环境是 Wayland 环境下的 gnome，最大的原因是 gnome-terminal 对 fcitx5 支持的不错，而且颜值也还可以。
-
-常用的浏览器是 Safari，没啥特别的原因，mac 默认；在 Linux 上用 Firefox，支持开源。
-
-## 个人履历
-
-### 2021 至今
-
-我是 2021 年完成高考的大学本科生，就读于四川大学软件学院软件工程专业。
-
-（未完待续……）
+(To be continued)

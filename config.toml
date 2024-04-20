@@ -56,9 +56,13 @@ name = "About"
 url = "/about/"
 weight = 3
 [[languages.en.menu.main]]
+  name = "Subscribe"
+  weight = 4
+  url = "/index.xml"
+[[languages.en.menu.main]]
   name = "中文"
   url = "../zh-cn"
-  weight = 4
+  weight = 5
 [[languages.zh-cn.menu.main]]
 identifier = "post" # section id
 name = "主页"       # section display title
@@ -75,9 +79,13 @@ name = "关于我"
 url = "/about/"
 weight = 3
 [[languages.zh-cn.menu.main]]
-  name = "EN"
-  url = "../en"
-  weight = 4
+name = "订阅"
+url = "/index.xml"
+weight = 4
+[[languages.zh-cn.menu.main]]
+name = "EN"
+url = "../en"
+weight = 5
 
 # https://gohugo.io/content-management/taxonomies#configure-taxonomies
 [taxonomies]
@@ -93,11 +101,10 @@ tags = "tags"
 description = "一个分享生活的博客" # website description
 favicon = "favicon.jpeg" # path to website icon, relative to ./static
 footnote = """
-Follow me on <a class=link href=https://github.com/forceofsystem>GitHub</a>,
-<a class=link href=/index.xml>RSS</a> |
+Follow me on <a class=link href=https://github.com/forceofsystem>GitHub</a> |
 <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
 """ # notes in the website footer
-keywords = ["hugo", "latex", "theme"] # website keywords
+# keywords = ["hugo", "latex", "theme"] # website keywords
 
 customCSS = []            # path to custom css files, relative to ./static
 customJS = []             # path to custom js files, relative to ./static
@@ -148,5 +155,5 @@ script = """
 """
 
 [services]
-  [services.googleAnalytics]
-    ID = 'G-TZC1QJP9DV'
+[services.googleAnalytics]
+ID = 'G-TZC1QJP9DV'

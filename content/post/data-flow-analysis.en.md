@@ -5,13 +5,11 @@ draft: false
 comments: true
 toc: true
 tags:
-  - 编译原理
-  - 优化
   - Compiler
   - Optimization
 ---
 
-这篇文章是我在看 _Engineering A Compiler_ (EAC，橡书) 中第 9 章数据流分析的笔记，里面标有 Confused 的地方是我困惑的内容，包括过程间常量传播 (Jump Function)、加速DOM计算，之后如果搞懂了会写文章来补充。
+This is my note for chapter 9 Data Flow Analysis in _Engineering A Compiler_ (EAC). The parts marked with Confused are the content that I am confused about, including Interprocedural Constant Propagation (Jump Function) and Speeding up the Iterative Dominance Framework. I will write an article to supplement it if I understand it later.
 
 <!--more-->
 
@@ -53,7 +51,9 @@ with the initial conditions that $D_{OM} (n_0) = \{n_0\}$, and $\forall n ≠ n_
 2. gather initial information for each block
 3. solve the equations to produce the $D_{OM}$ sets for each block
 
-![Untitled](/2024/data-flow-analysis/images/Iterative-Dominance-Framework.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/Iterative-Dominance-Framework.png" alt="Iterative Dominance Framework" style="zoom:50%;" />
+</div>
 
 ### Live-Variable Analysis
 
@@ -219,7 +219,9 @@ The algorithm to compute dominance frontiers is based on three observations as f
 2. For a join point j, each predecessor k of j must have $j \in DF(k)$.
 3. If $j \in DF(k)$ for some predecessor k, then j must also be in DF(l) for each $l \in D_{OM}(k)$, unless $l \in D_{OM}(j)$.
 
-![DF set](/static/2024/data-flow-analysis/images/DF.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/DF.png" alt="DF set" style="zoom:50%;" />
+</div>
 
 ### Placing $\phi$-Functions
 
@@ -236,11 +238,15 @@ Blocks set: a list of blocks for each name that contain a definition of that nam
 
 Algorithm to find the sets:
 
-![Globals and blocks](/2024/data-flow-analysis/images/Globals-Blocks.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/Globals-Blocks.png" alt="Globals and Blocks" style="zoom:75%;" />
+</div>
 
 and to rewrite the code:
 
-![Untitled](/2024/data-flow-analysis/images/Insertion.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/Insertion.png" alt="Insertion" style="zoom:75%;" />
+</div>
 
 > Since all the $\phi$-functions in a block execute concurrently, the order of their insertion is insignificant.
 > 
@@ -255,7 +261,9 @@ There are two ways to improve the efficiency:
 
 ### Renaming
 
-![Renaming](/2024/data-flow-analysis/images/Renaming.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/Renaming.png" alt="Renaming" style="zoom:50%;" />
+</div>
 
 This algorithm renames both definitions and uses in a preorder walk over the procedure’s dominator tree. It rewrites the operands with current SSA names, then it creates a new SSA name for the result of the operation. After rewriting the operands and definition, the algorithm rewrites the appropriate $\phi$-function parameters in each CFG successor of the block, using the current SSA names.
 
@@ -296,18 +304,24 @@ The lost-copy problem arises from the combination of copy folding and critical e
 
 For example:
 
-![out-of-ssa-wrong](/2024/data-flow-analysis/images/out-of-ssa-wrong.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/out-of-ssa-wrong.png" alt="Out of SSA Form" style="zoom:50%;" />
+</div>
 
 Panel a assigns z the second to last value of i; the code in panel c assigns $z_0$ the last value of i. With the critical edge split, as in panel d, copy insertion produces the correct behavior. However, it adds a jump to every iteration of the loop.
 
-![split](/2024/data-flow-analysis/images/split-critical.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/split-critical.png" alt="Split Critical Edge" style="zoom:50%;" />
+</div>
 
 The compiler can avoid this problem by checking the liveness of the target name for each copy that it tries to insert during out-of-SSA translation. When it discovers a copy target(in this example is $i_1$) that is live, it must preserve the living value in a tempory name and rewrite subsequent uses to refer to the tempoary name.
 
 > This step can be done with an algorithm modelled on the renaming step.
 > 
 
-![correct](/2024/data-flow-analysis/images/correct-insertion.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/correct-insertion.png" alt="Correct Insertion" style="zoom:50%;" />
+</div>
 
 **The swap problem**
 
@@ -315,7 +329,9 @@ Reason: all $\phi$-functions in a block execute concurrently, but the assignment
 
 For example:
 
-![naive-problem](/2024/data-flow-analysis/images/naive-insertion.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/naive-insertion.png" alt="Naive Insertion" style="zoom:50%;" />
+</div>
 
 The straightford fix for this problem is to adopt a two-stage copy protocol.
 
@@ -342,11 +358,15 @@ $a > b$ if and only if $a > b$ and $a ≠b$
 
 The semilattice for a single SSA name:
 
-![Semilattice](/2024/data-flow-analysis/images/Semilattice.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/Semilattice.png" alt="Semilattice" style="zoom:50%;" />
+</div>
 
 **Simply Sparse Constant Propagation Algorithm:**
 
-![SSCP](/2024/data-flow-analysis/images/SSCP.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/SSCP.png" alt="SSCP Algorithm" style="zoom:50%;" />
+</div>
 
 Initialization phase:
 
@@ -401,7 +421,9 @@ Three problems of interprocedural constant propagation:
 
 Algorithm:
 
-![IPO-CP](/2024/data-flow-analysis/images/IPO-CP.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/IPO-CP.png" alt="IPO-CP Algorithm" style="zoom:50%;" />
+</div>
 
 > Similar to the above propagation algoritm, the worklist should be a sparse set or something like it.
 > 
@@ -428,6 +450,9 @@ The implementation of jump functions is abundant, but all of them must hold foll
 
 We can use the $ID_{OM}$ sets as a proxy for the $D_{OM}$ sets, provided we can provide efficient methods to initialize the sets and to intersect them. We can use a two-pointer algorithm to identify the common suffix.
 
-![Advanced-Topic](/2024/data-flow-analysis/images/Advanced-Topic.png)
+<div align="center">
+  <img src="/2024/data-flow-analysis/images/Advanced-Topic.png" alt="Advanced Topic" style="zoom:50%;" />
+</div>
+
 
 This improved algorithm efficient, it halts in two passes on any reducible graph, in more than two passes on any irreducible graph.
