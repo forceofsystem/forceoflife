@@ -3,12 +3,10 @@ title: "评川大教务处回复——揭露无耻政客的丑恶嘴脸"
 date: 2024-03-14T09:42:51+08:00
 draft: false
 comments: false
-categories:
-tags:
-- 杂谈
-- 大学
-- 政治
+url: "/zh-cn/private/shixunjubao"
 ---
+
+## 评川大教务处回复——揭露无耻政客的丑恶嘴脸
 
 <!--more-->
 
