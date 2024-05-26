@@ -7,6 +7,8 @@ toc: false
 tags:
   - 生活
   - 杂谈
+categories:
+- 生活
 ---
 
 <!--more-->

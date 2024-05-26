@@ -7,6 +7,8 @@ toc: true
 tags:
   - Python
   - 编译原理
+categories:
+- 计算机
 ---
 
 <!--more-->

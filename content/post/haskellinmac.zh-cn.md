@@ -1,11 +1,13 @@
 ---
 title: 在Mac上配置Haskell环境
 date: 2023-06-28T18:10:03+08:00
-draft: true
+draft: false
 toc: true
 comments: true
 tags:
   - Haskell
+categories:
+- 计算机
 ---
 
 > 这篇博客将介绍如何在**中国**安装、配置 Mac 的 Haskell 环境和编辑器的高亮、补全，其中编辑器包括 Vim/Neovim、Visual Studio Code。

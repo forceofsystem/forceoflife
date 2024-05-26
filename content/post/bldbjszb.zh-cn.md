@@ -7,6 +7,8 @@ comments: true
 tags:
 - 生活
 - 辩论
+categories:
+- 大学
 ---
 
 

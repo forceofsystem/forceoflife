@@ -7,6 +7,8 @@ comments: false
 tags:
 - 辩论
 - 杂谈
+categories:
+- 大学
 ---
 
 

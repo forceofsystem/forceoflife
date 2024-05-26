@@ -9,6 +9,8 @@ tags:
   - 社科
   - 人文
   - 围炉夜话
+categories:
+- 大学
 ---
 
 <div align="center">

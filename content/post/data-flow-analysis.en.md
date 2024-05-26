@@ -7,6 +7,8 @@ toc: true
 tags:
   - Compiler
   - Optimization
+categories:
+- Computer Science
 ---
 
 This is my note for chapter 9 Data Flow Analysis in _Engineering A Compiler_ (EAC). The parts marked with Confused are the content that I am confused about, including Interprocedural Constant Propagation (Jump Function) and Speeding up the Iterative Dominance Framework. I will write an article to supplement it if I understand it later.

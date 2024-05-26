@@ -1,12 +1,14 @@
 ---
 title: 武汉游记
 date: 2023-05-02T16:44:49+08:00
-draft: true
+draft: false
 toc: true
 comments: true
 tags:
   - 生活
   - 旅行
+categories:
+- 大学
 ---
 
 > 朝辞巴蜀去，夕至荆楚地。
