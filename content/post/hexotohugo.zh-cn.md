@@ -7,8 +7,7 @@ tags:
   - hugo
   - 博客
   - 杂谈
-categories:
-- 计算机
+  - 计算机
 ---
 
 <!--more-->

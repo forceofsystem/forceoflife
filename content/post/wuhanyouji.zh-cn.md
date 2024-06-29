@@ -7,8 +7,6 @@ comments: true
 tags:
   - 生活
   - 旅行
-categories:
-- 大学
 ---
 
 > 朝辞巴蜀去，夕至荆楚地。

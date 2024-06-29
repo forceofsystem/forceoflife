@@ -7,8 +7,6 @@ comments: true
 tags:
   - 杂谈
   - 大学
-categories:
-- 大学
 ---
 
 > 这篇文章是关于我最近的一些经历与想法。
