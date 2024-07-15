@@ -3,7 +3,7 @@
 # https://gohugo.io/getting-started/configuration #
 ###################################################
 
-baseURL = "https://forceoflife.cn" # website root path
+baseURL = "https://forceoflife.cn/" # website root path
 #disqusShortname = "codearts"                      # disqus shortcode
 enableGitInfo = false                     # retrieve last modified date from git commits
 enableRobotsTXT = true                    # /robots.txt
@@ -47,7 +47,7 @@ url = "/"           # path to the section
 weight = 1          # order of sections
 [[languages.en.menu.main]]
 identifier = "archives"
-name = "Archives"
+name = "Posts"
 url = "/post/"
 weight = 2
 [[languages.en.menu.main]]
@@ -70,7 +70,7 @@ url = "/"           # path to the section
 weight = 1          # order of sections
 [[languages.zh-cn.menu.main]]
 identifier = "archives"
-name = "归档"
+name = "博客"
 url = "/post/"
 weight = 2
 [[languages.zh-cn.menu.main]]
