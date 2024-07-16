@@ -44,7 +44,7 @@ toc: true
   <div style="text-align: center">
     <h3>
     <a href=http://www.is.cas.cn>中国科学院软件研究所</a>
-    <a href="https://plctlab.org/en/">编程语言与编译技术实验室</a><br>
+    <a href="https://plctlab.org/zh/">PLCT 实验室</a><br>
     GNU 小队
     </h3>
   </div>
