@@ -1,0 +1,57 @@
+html {
+  min-height:100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: auto;
+  padding: 8px;
+  max-width: 960px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+.intro {
+  display: flex;
+  .info {
+    align-self: center;
+    text-align: center;
+    width: 70%;
+  }
+  .photo {
+    align-self: center;
+    width: 30%;
+  }
+}
+
+.item-title {
+  text-align: center;
+}
+
+.time {
+  text-align: right;
+}
+
+.item-info {
+  display: flex;
+  .left-info {
+    flex: 1;
+    margin-left: auto;
+  }
+  .right-info {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+a {
+	  color: #008cba;
+	    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+	  .hide-on-mobile {
+		      display: none;
+		        }
+}
