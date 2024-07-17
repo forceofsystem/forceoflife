@@ -32,10 +32,12 @@ toc: false
 <h3>Sichuan University</h3>
 </div>
 <div style="text-align: right">September 2021 - Now</div>
-<li> B.S.E in Software Engineering</li>
-<li> Overall GPA: 3.54, average score: 85.73</li>
-<li> IELTS score: 7.0 </li>
-<li> Expected graduation date: June 2025.
+<ul>
+  <li>B.S.E in Software Engineering</li>
+  <li>Overall GPA: 3.54, average score: 85.73</li>
+  <li>IELTS score: 7.0 </li>
+  <li>Expected graduation date: June 2025.
+</ul>
 
 <img width="100%" height="2" src="/resources/blackbar.png">
 
@@ -50,15 +52,19 @@ toc: false
   </div>
   <div style="text-align: right">May 2024 - Now</div>
 </div>
-<li> Porting the RISC-V Packed SIMD extension to <a href="https://ruyisdk.org/en/")>RuyiSDK</a>'s gnu toolchain (GCC 14.1.0 and Binutils 2.42).</li>
-<li> Engaged in the maintenance of <a href="https://www.openhwgroup.org">OpenHW Group</a>’s CORE-V GNU Toolchain (Binutils and GCC).
+<ul>
+  <li> Porting the RISC-V Packed SIMD extension to <a href="https://ruyisdk.org/en/")>RuyiSDK</a>'s gnu toolchain (GCC 14.1.0 and Binutils 2.42).</li>
+  <li> Engaged in the maintenance of <a href="https://www.openhwgroup.org">OpenHW Group</a>’s CORE-V GNU Toolchain (Binutils and GCC).
+</ul>
 
 <img width="100%" height="2" src="/resources/blackbar.png">
 
 <h2>Awards and Honours</h2>
-<li>2021-2022 The Second Prize Scholarship.</li>
-<li><b>Champion</b> of Debate Contest of <i>FengHuangZhanChi</i> (the most important debate contest in SCU).</li>
-<li>Third prize of 2022 <i>Debating Cup</i> (a school-level debate contest).
+<ul>
+  <li>2021-2022 The Second Prize Scholarship.</li>
+  <li><b>Champion</b> of Debate Contest of <i>FengHuangZhanChi</i> (the most important debate contest in SCU).</li>
+  <li>Third prize of 2022 <i>Debating Cup</i> (a school-level debate contest).
+</ul>
 
 <img width="100%" height="2" src="/resources/blackbar.png">
 
@@ -73,35 +79,47 @@ toc: false
     <div style="text-align: right">December 2021 - May 2022</div>
   </div>
 </div>
-<li>Designed a static typed language, which is C's subset.</li>
-<li>Created an intermediate representation for the language.</li>
-<li>Implented a compiler, which can transform the source code into mips assembly code.</li>
-<li>Collaborated with other members to arrange the system to the Internet.</li>
+<ul>
+  <li>Designed a static typed language, which is C's subset.</li>
+  <li>Created an intermediate representation for the language.</li>
+  <li>Implented a compiler, which can transform the source code into mips assembly code.</li>
+  <li>Collaborated with other members to arrange the system to the Internet.</li>
+</ul>
 
 <div>
   <div style="text-align: center">
     <h3>MIT 6.1810 XV6 Lab</h3>
   </div>
 </div>
-<li>Finished all the 10 labs of MIT 6.1810 independently, added the essential features for the xv6 operating system.</li>
+<ul>
+  <li>Finished all the 10 labs of MIT 6.1810 independently, added the essential features for the xv6 operating system.</li>
+</ul>
 
 <div>
   <div style="text-align: center">
     <h3>Lox Crafting Interpreter</h3>
   </div>
 </div>
-<li>Implemented a Lox interpreter in C and Java, which is a scripting language designed by Robert Nystrom in his book <i>Crafting Interpreters</i>.
+<ul>
+  <li>Implemented a Lox interpreter in C and Java, which is a scripting language designed by Robert Nystrom in his book <i>Crafting Interpreters</i>.</li>
+</ul>
 
 <img width="100%" height="2" src="/resources/blackbar.png">
 
 ## Skills and Interests
 
-<li> Research interests: compiler (both programming language and architecture), software engineering, and operating system.</li>
-<li>Compiler: familiar with the theory of compiler (especially for the optimization and backend).</li>
-<li>Programming languages: <b>proficient</b>: C; <b>familar</b>: Modern C++ (C++ 20), Java, Python, Haskell, sh, Vimscript.</li>
-<li>Instuction set architecture: RISC-V, ARM, AMD64.</li>
-<li>Development softwares: GCC, Binutils, QEMU, Make, Vim, LLVM.</li>
-<li>Operating system experience: Linux (for daily use and development), finishing Linux From Scratch.</li>
-<li>Reading: <i>Engineer a Compiler</i>, <i>Compiler: Principles, Techniques, and Tools</i>, <i>Advanced Programming in the UNIX Environment</i>, <i>The RISC-V Reader</i>, <i>Operating System: Three Easy Pieces</i>, <i>Computer Systems: A Programmer's Perspective</i>, <i>A Tour of C++</i> etc.
+<ul>
+  <li> Research interests: compiler (both programming language and architecture), software engineering, and operating system.</li>
+  <li>Compiler: familiar with the theory of compiler (especially for the optimization and backend).</li>
+  <li>Programming languages:
+      <ul>
+        <li><b>Proficient</b>: C;</li>
+        <li><b>Familar</b>: Modern C++ (C++ 20), Java, Python, Haskell, sh, Vimscript.</li>
+      </ul>
+  <li>Instuction set architecture: RISC-V, ARM, AMD64.</li>
+  <li>Development softwares: GCC, Binutils, QEMU, Make, Vim, LLVM.</li>
+  <li>Operating system experience: Linux (for daily use and development), finishing Linux From Scratch.</li>
+  <li>Reading: <i>Engineer a Compiler</i>, <i>Compiler: Principles, Techniques, and Tools</i>, <i>Advanced Programming in the UNIX Environment</i>, <i>The RISC-V Reader</i>, <i>Operating System: Three Easy Pieces</i>, <i>Computer Systems: A Programmer's Perspective</i>, <i>A Tour of C++</i> etc.
+</ul>
 
 <img width="100%" height="2" src="/resources/blackbar.png">
