@@ -31,7 +31,7 @@ toc: true
 <div style="text-align: center">
 <h3>四川大学</h3>
 </div>
-<div style="text-align: right">2021 年九月至今</div>
+<div style="text-align: right; color: #fbf1c7">2021 年九月至今</div>
 <ul>
   <li>软件工程学士</li>
   <li>平均绩点: 3.54，平均分: 85.73</li>
@@ -50,7 +50,7 @@ toc: true
     GNU 小队
     </h3>
   </div>
-  <div style="text-align: right">2024 年四月至今</div>
+  <div style="text-align: right; color: #fbf1c7">2024 年四月至今</div>
 </div>
 <ul>
   <li> 移植 RISC-V Packed SIMD 扩展到 <a href="https://ruyisdk.org/en/")>RuyiSDK</a> 的 GNU  工具链上 (GCC 14.1.0 和 Binutils 2.42).</li>
@@ -74,7 +74,7 @@ toc: true
   <div style="text-align: center">
     <h3>可视化编译器</h3>
   </div>
-  <div style="display: flex;">
+  <div style="display: flex; color: #fbf1c7">
     <div style="flex :1; margin-left: auto;">指导教师: 杨秋辉，副教授</div>
     <div style="text-align: right">2021 年 12 月 至 2022 年 5 月</div>
   </div>

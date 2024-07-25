@@ -25,7 +25,7 @@ defaultMarkdownHandler = "goldmark"
 [markup.goldmark.renderer]
 unsafe = true # enable html in markdown
 [markup.highlight]
-style = "emacs" # syntax highlight style, see https://xyproto.github.io/splash/docs/
+style = "gruvbox" # syntax highlight style, see https://xyproto.github.io/splash/docs/
 
 [languages]
 [languages.en]
@@ -118,24 +118,24 @@ toc = true               # whether to enable table of contents in posts
 [params.giscus]
 enable = true # whether to enable giscus
 # paste giscus' <script></script> configuration between the triple quotes
-script = """
-<script src="https://giscus.app/client.js"
-        data-repo="forceofsystem/forceofsystem.github.io"
-        data-repo-id="R_kgDOJn4OQw"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOJn4OQ84CeqcH"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-"""
+# script = """
+# <script src="https://giscus.app/client.js"
+#         data-repo="forceofsystem/forceofsystem.github.io"
+#         data-repo-id="R_kgDOJn4OQw"
+#         data-category="Announcements"
+#         data-category-id="DIC_kwDOJn4OQ84CeqcH"
+#         data-mapping="pathname"
+#         data-strict="0"
+#         data-reactions-enabled="1"
+#         data-emit-metadata="0"
+#         data-input-position="top"
+#         data-theme="/resources/giscus.css"
+#         data-lang="en"
+#         data-loading="lazy"
+#         crossorigin="anonymous"
+#         async>
+# </script>
+# """
 
 [params.math]
 enable = true # whether to enable math typesetting

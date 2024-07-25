@@ -31,7 +31,7 @@ toc: false
 <div style="text-align: center">
 <h3>Sichuan University</h3>
 </div>
-<div style="text-align: right">September 2021 - Now</div>
+<div style="text-align: right; color: #fbf1c7">September 2021 - Now</div>
 <ul>
   <li>B.S.E in Software Engineering</li>
   <li>Overall GPA: 3.54, average score: 85.73</li>
@@ -50,7 +50,7 @@ toc: false
     <a href=http://www.is.cas.cn>ISCAS</a>
     </h3>
   </div>
-  <div style="text-align: right">May 2024 - Now</div>
+  <div style="text-align: right; color: #fbf1c7">May 2024 - Now</div>
 </div>
 <ul>
   <li> Porting the RISC-V Packed SIMD extension to <a href="https://ruyisdk.org/en/")>RuyiSDK</a>'s gnu toolchain (GCC 14.1.0 and Binutils 2.42).</li>
@@ -74,7 +74,7 @@ toc: false
   <div style="text-align: center">
     <h3>Visual Compiler</h3>
   </div>
-  <div style="display: flex;">
+  <div style="display: flex; color: #fbf1c7">
     <div style="flex :1; margin-left: auto;">Advisor: Qiuhui Yang, associate profressor</div>
     <div style="text-align: right">December 2021 - May 2022</div>
   </div>
